@@ -9,4 +9,4 @@ player can freely move around the screen.
 
 =====================================================
 
-Created by WesBrownDev
+Created by Wes Brown
