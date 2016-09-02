@@ -80,6 +80,17 @@
 			<key>previewFolderHidden</key>
 			<true/>
 		</dict>
+		<key>Player.png</key>
+		<dict>
+			<key>format_ios</key>
+			<integer>2</integer>
+			<key>format_ios_compress</key>
+			<true/>
+			<key>format_tvos</key>
+			<integer>2</integer>
+			<key>format_tvos_compress</key>
+			<true/>
+		</dict>
 		<key>Sprites</key>
 		<dict/>
 		<key>ccbResources</key>
