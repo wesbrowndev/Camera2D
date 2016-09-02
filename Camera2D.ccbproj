@@ -22,6 +22,8 @@
 	<integer>0</integer>
 	<key>excludedFromPackageMigration</key>
 	<false/>
+	<key>excludedFromSpriteBuilderMigration</key>
+	<false/>
 	<key>exporter</key>
 	<string>ccbi</string>
 	<key>fileType</key>
@@ -30,35 +32,35 @@
 	<integer>1</integer>
 	<key>onlyPublishCCBs</key>
 	<false/>
-	<key>publishAudioQuality_android</key>
-	<integer>4</integer>
 	<key>publishAudioQuality_ios</key>
+	<integer>4</integer>
+	<key>publishAudioQuality_tvos</key>
 	<integer>4</integer>
 	<key>publishDirectory</key>
 	<string>Source/Resources/Published-iOS</string>
-	<key>publishDirectoryAndroid</key>
-	<string>Source/Resources/Published-Android</string>
-	<key>publishEnabledAndroid</key>
+	<key>publishDirectoryAppleTV</key>
+	<string>Source/Resources/Published-tvOS</string>
+	<key>publishEnabledappleTV</key>
 	<true/>
 	<key>publishEnablediPhone</key>
 	<true/>
 	<key>publishEnvironment</key>
 	<integer>0</integer>
-	<key>publishResolution_android_phone</key>
-	<true/>
-	<key>publishResolution_android_phonehd</key>
-	<true/>
-	<key>publishResolution_android_tablet</key>
-	<true/>
-	<key>publishResolution_android_tablethd</key>
-	<true/>
 	<key>publishResolution_ios_phone</key>
-	<true/>
+	<false/>
 	<key>publishResolution_ios_phonehd</key>
 	<true/>
 	<key>publishResolution_ios_tablet</key>
-	<true/>
+	<false/>
 	<key>publishResolution_ios_tablethd</key>
+	<true/>
+	<key>publishResolution_tvos_phone</key>
+	<false/>
+	<key>publishResolution_tvos_phonehd</key>
+	<false/>
+	<key>publishResolution_tvos_tablet</key>
+	<false/>
+	<key>publishResolution_tvos_tablethd</key>
 	<true/>
 	<key>publishToZipFile</key>
 	<false/>
@@ -68,7 +70,7 @@
 	<array>
 		<dict>
 			<key>path</key>
-			<string>Packages/SpriteBuilder Resources.sbpack</string>
+			<string>Packages/CocosBuilder Resources.ccbpack</string>
 		</dict>
 	</array>
 	<key>resourceProperties</key>
@@ -164,9 +166,8 @@
 		</dict>
 	</dict>
 	<key>versionStr</key>
-	<string>revision : eea568a5c7
-sku : default
-version : 1.4.9
+	<string>version : 3.5.0
+revision : 3c5a44ebc4
 </string>
 </dict>
 </plist>
