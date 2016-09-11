@@ -6,22 +6,22 @@ class MainScene: CCNode {
     weak var level: CCNode!
     
     func didLoadFromCCB() {
-        userInteractionEnabled = true
+        isUserInteractionEnabled = true
         
         loadLevel()
     }
     
-    override func touchBegan(touch: UITouch!, withEvent event: UIEvent!) {
-        player.stopActionByTag(1)
+    override func touchBegan(_ touch: UITouch!, with event: UIEvent!) {
+        player.stopAction(byTag: 1)
         
-        let position: CGPoint = touch.locationInNode(level)
-        let move: CCAction = CCActionMoveTo.actionWithDuration(0.2, position: position) as! CCAction
+        let position: CGPoint = touch.location(in: level)
+        let move: CCAction = CCActionMoveTo.action(withDuration: 0.2, position: position) as! CCAction
         
         move.tag = 1
-        player.runAction(move)
+        player.run(move)
     }
     
-    override func update(delta: CCTime) {
+    override func update(_ delta: CCTime) {
         Camera2D(player)
     }
     
@@ -30,9 +30,9 @@ class MainScene: CCNode {
         player = self.getChildByName("player", recursively: true)
     }
     
-    func Camera2D(target: CCNode) {
-        let viewSize: CGSize = CCDirector.sharedDirector().viewSize()
-        let viewCenter: CGPoint = CGPointMake(viewSize.width / 2.0, viewSize.height / 2.0)
+    func Camera2D(_ target: CCNode) {
+        let viewSize: CGSize = CCDirector.shared().viewSize()
+        let viewCenter: CGPoint = CGPoint(x: viewSize.width / 2.0, y: viewSize.height / 2.0)
         
         var viewPosition: CGPoint = ccpSub(target.positionInPoints, viewCenter)
         
