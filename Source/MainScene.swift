@@ -5,7 +5,7 @@ class MainScene: CCNode {
     weak var player: CCNode!
     weak var level: CCNode!
     
-    func didLoadFromCCB() {
+    @objc func didLoadFromCCB() {
         isUserInteractionEnabled = true
         
         loadLevel()
